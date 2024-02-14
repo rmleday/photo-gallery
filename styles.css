@@ -1,0 +1,148 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flexbox;
+    margin: auto;
+    width: 1300px;
+}
+
+header{
+    background-color: white;
+    color: #007d7b;
+    
+    }
+
+/*@media screen and (max-width:1300px){
+ body {
+    margin-left: 100px;
+    margin-right: 100px;
+ }
+}
+*/
+
+.caption{
+    background-color: white;
+}
+
+.caption h2 {
+    text-align: center;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-rows: auto;*/
+    grid-column-gap: 5px;
+    background-color: white;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    max-width: 100%;
+}
+
+
+p {
+    font-size: 1.25em;
+}
+
+figcaption, label, input, small {
+    font-size: 1em;
+}
+
+nav a {
+    font-size: 1.5em;
+    
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+nav ul li{
+    background-color: black;
+    color: white;
+    float: right;
+    list-style: none;
+    display: inline;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.locations{
+    padding: 5px;
+}
+
+form {
+    color: white;
+    justify-content: center;
+    width: auto;
+}
+
+input{
+    color: #007d7b;
+    background-color: white;
+    width: 80vw;
+}
+
+input[submit]{
+    background-color: #007d7b;
+    color: white;
+    border-radius: 5px;
+}
+
+#contact{
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    
+}
+
+#submit{
+    border-radius: 15px;
+    background-color: #007d7b;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+}
+@media screen and (max-width: 880px) {
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        background-color: white;
+        margin: 5px;
+        width: 880px;
+    }
+
+    body {
+        margin: auto;
+        width: 880px;
+    }
+}
+
+@media screen and (max-width:485px){
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: white;
+        margin: 5px;
+        width: 485px;
+    }
+
+    body {
+        margin: auto;
+        width:485px ;
+    }
+    nav {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+}
